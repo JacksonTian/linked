@@ -1,0 +1,25 @@
+{
+  "name": "linked",
+  "version": "0.0.1",
+  "description": "tiny middleware framework",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "middleware"
+  ],
+  "author": "Jackson Tian",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JacksonTian/linked.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JacksonTian/linked/issues"
+  },
+  "homepage": "https://github.com/JacksonTian/linked"
+}
