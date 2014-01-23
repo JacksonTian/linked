@@ -1,6 +1,6 @@
 {
   "name": "linked",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "tiny middleware framework",
   "main": "index.js",
   "directories": {
