@@ -4,10 +4,15 @@
   "description": "tiny middleware framework",
   "main": "index.js",
   "directories": {
+    "example": "example",
+    "lib": "lib",
     "test": "test"
   },
+  "type": "module",
   "scripts": {
-    "test": "make test"
+    "test": "mocha -R spec --timeout 2000 test/*.test.js",
+    "test:cov": "c8 --reporter=html npm run test",
+    "lint": "eslint --fix ."
   },
   "keywords": [
     "middleware"
@@ -22,21 +27,10 @@
     "url": "https://github.com/JacksonTian/linked/issues"
   },
   "homepage": "https://github.com/JacksonTian/linked",
-  "config": {
-    "blanket": {
-      "pattern": "linked/lib",
-      "data-cover-flags": {
-        "debug": false
-      }
-    },
-    "travis-cov": {
-      "threshold": 97
-    }
-  },
   "devDependencies": {
+    "eslint": "^9.0.0",
     "mocha": "*",
     "should": "*",
-    "blanket": "*",
-    "cov": "*"
+    "c8": "^7.0.0"
   }
 }
